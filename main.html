@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("C:\Users\sahil malik\Desktop\banner.jfif");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.containernav {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+  position: relative;
+  text-align: center;
+  color: yellow;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    bottom:0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+  <div class="containernav">
+    <div class="topnav">
+      <a href="main.html">Home</a>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+      <a href="contact.html">ContactUs</a>
+      <a href="login.html">Login</a>
+    </div> 
+	<img src="C:\Users\sahil malik\Desktop\banner.jfif" alt="Snow" style="width:100%;">
+	<div class="centered"><h1><i>WELCOME TO CHILLIES AND TOMATOES...</i></h1></div>
+	</div>
+  </div>
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="mennu.html">STARTERS</a>
+    <a href="#">SNACKS</a>
+    <a href="#">MAIN COURSE</a>
+    <a href="#">DESSERTS</a>
+  </div>
+</div>
+
+<script>
+ function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+ 
+</script>
+<p><h3><i>Chillies and Tomatoes Special</i></h3>
+We have gain our popularity through our mixtures of spicies in our food.As it is well said by someone that <b>"Spice a dish with love and it pleases every palate..."</b>, We also believe in the same so we keep on experimenting our skills and taste buds to find out the craziest and the crispy-est combination we can.We use 100% genuine spices in our food thats why its taste so pure and like home.We serve Indian, Mughlai and Chineese.</p>
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p>The idea behind this online restaurant was of Mr Sahil Malik,he wanted a restaurant to be free of customers coming and waiting hours just to have delicious food of their choice,now with us you can enjoy your ordered food without stepping out of your home.Also this complies with the COVID-19 norms issued by the government and this keeps you and others safe.</p>
+    <p><strong>The Chef?</strong> Mr.Sahil himself<img src="C:\Users\sahil malik\Desktop\sahil.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>We are proud of our staff.</p>
+    <img src="C:\Users\sahil malik\Desktop\chefs.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Mon & Tue CLOSED</p>
+        <p>Wednesday 10.00 - 24.00</p>
+        <p>Thursday 10:00 - 24:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Friday 10:00 - 12:00</p>
+        <p>Saturday 10:00 - 23:00</p>
+        <p>Sunday Closed</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</body>
+</html> 
